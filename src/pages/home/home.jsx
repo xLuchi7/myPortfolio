@@ -85,7 +85,7 @@ const Home = () => {
                                 <div className="aboutMeTextContainer">
                                     <p className="aboutMeTextDescription">I am a 20 years old Argentinian Fullstack web developer (specialized in frontend). I am also about to finish my Programming degree in the UTN (Universidad Tecnologica Nacional). 
                                         I have experience making websites using React, Boostrap, Nodejs and MongoDB. I count with solid fundamentals of object oriented programming, a solid design of SQL databases and  
-                                        NoSQL databases. I count with the higgest level of english, spanish (native language) and a really advanced level of portuguese.
+                                        NoSQL databases such as MongoDB. I count with the higgest level of english, spanish (native language) and a really advanced level of portuguese.
                                     </p>
                                 </div>
                                 {/* <h4 className="myStackTitle">My Stack</h4> */}
