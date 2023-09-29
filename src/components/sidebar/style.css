@@ -1,0 +1,177 @@
+.active-button {
+    background-color: #007bff; /* Change this to your desired background color */
+    color: #fff; /* Change this to your desired text color */
+}
+#homeButton{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    height: 40px;
+    width: 86%;
+    /* background-color: #007bff; */
+    border-radius: 4px;
+    border: none;
+}
+#homeButton:hover{
+    cursor: pointer;
+}
+.sidebar{
+    background-color: rgb(39, 38, 38);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 18%;
+    position: sticky;
+    height: calc(100vh - 0px);
+    top: 0;
+    color: white;
+}
+@media screen and (max-width: 1629px){
+    .sidebar{
+        width: 23%;
+    }
+}
+@media screen and (max-width: 1447px){
+    .sidebar{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1127px){
+    .sidebar{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 931px){
+    .sidebar{
+        width: 40%;
+    }
+}
+.line{
+    /* border-top: 1px solid #ccc; */
+    margin-top: 20px;
+    width: 86%;
+    height: 1px;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    background-color: #ccc;
+}
+.line2{
+    width: 86%;
+    height: 1px;
+    margin-left: 6%;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    /* margin-top: 32rem; */
+}
+.headLine{
+    margin-top: 20px;
+    margin-left: 6%;
+}
+.homeContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    height: 40px;
+    width: 86%;
+    background-color: #007bff;
+    border-radius: 4px;
+}
+.houseIcon{
+    margin-left: 15px;
+}
+.homeText{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#aboutMeButton{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    height: 40px;
+    width: 86%;
+    /* background-color: #007bff; */
+    border-radius: 4px;
+}
+#aboutMeButton{
+    cursor: pointer;
+}
+.aboutMeText{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.aboutMeIcon{
+    margin-left: 15px;
+}
+#myProjectsButton{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    height: 40px;
+    width: 86%;
+    /* background-color: #007bff; */
+    border-radius: 4px;
+}
+#myProjectsButton{
+    cursor: pointer;
+}
+.projectsText{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.projectsIcon{
+    margin-left: 15px;
+}
+#contactMeButton{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    height: 40px;
+    width: 86%;
+    /* background-color: #007bff; */
+    border-radius: 4px;
+}
+#contactMeButton:hover{
+    cursor: pointer;
+}
+.contactMeText{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.contactMeIcon{
+    margin-left: 15px;
+}
+.noUnderline{
+    text-decoration: none;
+}
+.mediaLinksContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 500px; */
+    /* margin-top: 200%; */
+    /* position: sticky;
+    height: calc(0px - 100vh);
+    bottom: 0; */
+    color: white;
+    margin-bottom: 1rem;
+}
+.bi-github{
+    margin-right: 1rem;
+}
+.bi-github:hover{
+    fill: #007bff;
+}
+.bi-linkedin{
+    margin-left: 1rem;
+}
+.bi-linkedin:hover{
+    fill: #007bff;
+}

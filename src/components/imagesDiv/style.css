@@ -1,0 +1,10 @@
+.divImagesSkills{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.images{
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}

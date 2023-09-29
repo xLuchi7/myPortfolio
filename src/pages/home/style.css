@@ -1,0 +1,294 @@
+.mainContainer{
+    display: flex;
+}
+
+.sidebar{
+    background-color: blue;
+    width: 300px;
+    position: sticky;
+    height: calc(100vh - 0px);
+    top: 0;
+}
+.scrollPage{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+.homeContent{
+    margin-left: 15%;
+    padding-top: 18rem;
+}
+@media screen and (max-width: 563px){
+    .homeContent{
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 370px){
+    .homeContent{
+        margin-left: 5%;
+    }
+}
+.pHomeText{
+    width: 30%;
+}
+@media screen and (max-width: 1376px){
+    .pHomeText{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 719px){
+    .pHomeText{
+        width: 50%;
+    }
+}
+.btnDownloadCV{
+    margin-top: 1rem;
+    background-color: #007bff;
+    border: none;
+    box-shadow: 3px 3px 0 white;
+    border-radius: 2px;
+    /* border: 1px solid white; */
+    height: 40px;
+    width: 160px;
+    color: white;
+}
+.btnDownloadCV:hover{
+    /* background-color: #0450a1; */
+    /* background-color: rgb(43, 42, 42);
+    background-color: rgb(39, 38, 38); */
+    background-color: grey;
+    /* color: black; */
+    /* color: #007bff;*/
+    /* box-shadow: 3px 3px 0 #007bff; */
+}
+.aboutMeContent{
+    margin-left: 15%;
+    padding-top: 19rem;
+}
+@media screen and (max-width: 563px){
+    .aboutMeContent{
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 370px){
+    .aboutMeContent{
+        margin-left: 5%;
+    }
+}
+.aboutMeTextContainer{
+    width: 70%;
+}
+.aboutMeTextDescription{
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+.myStackTitle{
+    margin-top: 8rem;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 57px; */
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.images{
+    width: 90px;
+    aspect-ratio: auto 90 / 90;
+    height: 90px;
+}
+.divImagesSkills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.educationTitle{
+    margin-top: 12rem;
+    margin-bottom: 2.5rem;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.myProjectsTitle{
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+.myProjectsContent{
+    margin-left: 15%;
+    padding-top: 10rem;
+}
+@media screen and (max-width: 563px){
+    .myProjectsContent{
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 370px){
+    .myProjectsContent{
+        margin-left: 5%;
+    }
+}
+.ventaGamerLink{
+    margin-right: 1.5rem;
+}
+.ventaGamerDesc{
+    margin-right: 1.5rem;
+}
+.emailMessageDiv{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+}
+.carousel{
+    width: 80%;
+}
+
+.reactSVG{
+    width: 18%;
+}
+.nodeSVG{
+    width: 18%;
+}
+.javascriptSVG{
+    width: 15%;
+    /* margin-top: 0.3rem; */
+}
+.htmlSVG{
+    width: 15%;
+}
+.cssSVG{
+    width: 15%;
+}
+.aReactOpenCertificate{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    /* float: right; */
+    cursor: pointer;
+}
+.aReactOpenCertificate:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.aNodeOpenCertificate{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.backendSVGMarginTop{
+    margin-top: 0.4rem;
+}
+.aNodeOpenCertificate:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.aJavascriptOpenCertificate{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.javascriptSVGMarginTop{
+    margin-top: 0.2rem;
+}
+.aJavascriptOpenCertificate:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.aWebDevOpenCertificate{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.aWebDevOpenCertificate:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.webDevSVGMarginTop{
+    margin-top: 0.3rem;
+}
+.verticalLine{
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: #ccc;
+    /* margin-right: 1rem; */
+    padding-left: 1px;
+}
+@media screen and (max-width: 415px){
+    .verticalLine{
+        height: 85px;
+    }
+}
+.divReactEducation{
+    display: flex;
+    width: 380px;
+}
+.divBackendEducation{
+    display: flex;
+    width: 380px;
+    margin-top: 4rem;
+}
+.divjavascriptEducation{
+    display: flex;
+    width: 380px;
+    margin-top: 4rem;
+}
+.divWebDevEducation{
+    display: flex;
+    width: 380px;
+    margin-top: 4rem;
+}
+@media screen and (max-width: 415px){
+    .divReactEducation{
+        width: 312px;
+    }
+    .divBackendEducation{
+        width: 312px;
+    }
+    .divjavascriptEducation{
+        width: 312px;
+    }
+    .divWebDevEducation{
+        width: 312px;
+    }
+    .h5reactTitle{
+        font-size: 18px;
+    }
+    .h5javascriptTitle{
+        font-size: 18px;
+    }
+    .h5backendTitle{
+        font-size: 18px;
+    }
+    .h5webDevTitle{
+        font-size: 18px;
+    }
+}
+.divReactEducationDetails{
+    margin-left: 1rem;
+}
+.divBackendEducationDetails{
+    margin-left: 1rem;
+}
+.divJavascriptEducationDetails{
+    margin-left: 1rem;
+}
+.divWebDevEducationDetails{
+    margin-left: 1rem;
+}
+.aboutMeTitle{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-weight: 400; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 57px; */
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.aGithubIcon2{
+    margin-left: 4rem;
+}

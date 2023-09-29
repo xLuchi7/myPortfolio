@@ -1,0 +1,142 @@
+.contactMeContent{
+    margin-left: 15%;
+    padding-top: 10rem;
+}
+.contactMeTitle{
+    margin-top: 5rem;
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+.myContactInfoContainer{
+    margin-top: 2rem;
+    width: 45%;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 0.6rem;
+    background-color: rgb(19, 19, 19);
+}
+.myContactInfoText{
+    margin-left: 2rem;
+    padding-top: 1.2rem;
+    margin-right: 1rem;
+}
+.emailDiv{
+    display: flex;
+}
+.myContactInfoIcon{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.emailDirection{
+    margin-top: 0.9rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.phoneDiv{
+    display: flex;
+}
+.phoneIcon{
+    margin-left: 1.9rem;
+}
+.phoneNumber{
+    margin-left: 0.7rem;
+    font-weight: bold;
+}
+.sendEmailContainer{
+    margin-top: 2rem;
+    width: 45%;
+    height: 440px;
+    padding-bottom: 1rem;
+    background-color: rgb(19, 19, 19);
+}
+.sendEmailText{
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+#emailDirectionInput{
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    border: 2px solid rgba(196, 196, 196, 0.3);
+    border-radius: 2px;
+    font-size: 15px;
+    background: local;
+    padding-left: 1rem;
+    width: 88%;
+    height: 40px;
+    color: white;
+}
+#emailMessageTextArea{
+    margin-left: 2rem;
+    margin-top: 1.4rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    border: 2px solid rgba(196, 196, 196, 0.3);
+    border-radius: 2px;
+    font-size: 15px;
+    background: local;
+    padding-left: 1rem;
+    width: 88%;
+    height: 240px;
+    color: white;
+    resize: vertical;
+}
+#btnSendEmail{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background-color: #007bff;
+    border: none;
+    box-shadow: 3px 3px 0 white;
+    border-radius: 2px;
+    /* border: 1px solid white; */
+    height: 40px;
+    width: 160px;
+    color: white;
+}
+#btnSendEmail:hover{
+    background-color: grey;
+}
+
+@media screen and (max-width: 1400px){
+    .sendEmailContainer{
+        width: 65%;
+        padding-right: 1.4rem;
+    }
+}
+@media screen and (max-width: 1133px){
+    .sendEmailContainer{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 491px){
+    .sendEmailContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1400px){
+    .myContactInfoContainer{
+        width: 65%;
+        padding-right: 1.4rem;
+    }
+}
+@media screen and (max-width: 1133px){
+    .myContactInfoContainer{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 491px){
+    .myContactInfoContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 563px){
+    .contactMeContent{
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 370px){
+    .contactMeContent{
+        margin-left: 5%;
+    }
+}
