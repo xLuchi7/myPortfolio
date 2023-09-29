@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 import { saveAs } from 'file-saver';
-import pdfCV from "../../images/JeanRoa_EN.pdf"
+import pdfCV from "../../images/LucianoSessarego.pdf"
 
 const BtnDownloadCV = () => {
     const handleDownload = () => {
