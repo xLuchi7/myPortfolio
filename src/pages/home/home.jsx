@@ -101,7 +101,7 @@ const Home = () => {
                                 <div className="divUTNEducation">
                                     <div className="verticalLine"></div>
                                     <div className="divUTNEducationDetails">
-                                        <h5 className="h5UTNTitle">UTN Degree</h5>
+                                        <h5 className="h5UTNTitle">UTN Programming Degree</h5>
                                         <img className="utnSVG" src={utnSVG} alt="utn svg" />
                                         <a className="aUTNOpenCertificate" onClick={() => handleOpenCertificateClick()}>Open Certificate</a>
                                     </div>
