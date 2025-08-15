@@ -89,11 +89,17 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-.myProjectsTitle{
+/* .myProjectsTitle{
     font-size: 55px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 3rem;
+} */
+.myProjectsTitle{
+    font-size: 3.7rem;         
+    font-weight: 700;       
+    margin-bottom: 1.5rem;    
+    color: white;              
 }
 .myProjectsContent{
     margin-left: 15%;
@@ -110,10 +116,25 @@
     }
 }
 .ventaGamerLink{
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
+    font-size: 1.5rem;        
+    font-weight: 500;
+    color: #17a2b8; 
+    margin-bottom: 0.5rem;
+}
+.ventaGamerLink a{
+    color: #ffc107;
+    text-decoration: none;
+}
+.ventaGamerLink a:hover {
+    text-decoration: underline;
 }
 .ventaGamerDesc{
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
+    font-size: 1rem;           /* Tamaño más pequeño para la descripción */
+    color: #ced4da;   
+    line-height: 1.6;          /* Espaciado para mejorar la lectura */
+    margin-bottom: 2rem; 
 }
 .emailMessageDiv{
     display: flex;
@@ -123,8 +144,31 @@
 .carousel{
     width: 80%;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;          /* que no ocupen toda la altura */
+  top: 50%;             /* centrados verticalmente */
+  transform: translateY(-50%);
+}
 
+.carousel-control-prev {
+  left: -40px;          /* los mueves hacia la izquierda afuera de la imagen */
+}
+
+.carousel-control-next {
+  right: -40px;         /* los mueves hacia la derecha afuera de la imagen */
+}
+
+.carousel-indicators {
+    position: static;   /* ya no son absolutos */
+    margin-top: 10px;   /* espacio entre la imagen y los botones */
+    justify-content: center; /* centrarlos */
+  }
+  
 .reactSVG{
+    width: 18%;
+}
+.utnSVG{
     width: 18%;
 }
 .nodeSVG{
@@ -139,6 +183,13 @@
 }
 .cssSVG{
     width: 15%;
+}
+.aUTNOpenCertificate{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    /* float: right; */
+    cursor: pointer;
 }
 .aReactOpenCertificate{
     text-decoration: none;
@@ -203,9 +254,14 @@
         height: 85px;
     }
 }
+.divUTNEducation{
+    display: flex;
+    width: 380px;
+}
 .divReactEducation{
     display: flex;
     width: 380px;
+    margin-top: 4rem;
 }
 .divBackendEducation{
     display: flex;
@@ -235,6 +291,9 @@
     .divWebDevEducation{
         width: 312px;
     }
+    .h5UTNTitle{
+        font-size: 18px;
+    }
     .h5reactTitle{
         font-size: 18px;
     }
@@ -249,6 +308,9 @@
     }
 }
 .divReactEducationDetails{
+    margin-left: 1rem;
+}
+.divUTNEducationDetails{
     margin-left: 1rem;
 }
 .divBackendEducationDetails{
@@ -271,4 +333,7 @@
 }
 .aGithubIcon2{
     margin-left: 4rem;
+}
+.ventaGamerProject{
+    margin-top: 5rem;
 }

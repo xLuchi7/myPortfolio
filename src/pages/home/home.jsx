@@ -3,9 +3,14 @@ import './style.css';
 import Sidebar from "../../components/sidebar/sidebar";
 //import imgHtml from '../../../static/images/html1.png'
 import ImagesDiv from "../../components/imagesDiv/imagesDiv";
-import img1 from '../../images/ventaGamer1.png'
-import img2 from '../../images/ventaGamer2.png'
-import img3 from '../../images/ventaGamer3.png'
+import img1 from '../../images/img1.png'
+import img2 from '../../images/img2.png'
+import img3 from '../../images/img3.png'
+import img4 from '../../images/img4.png'
+import mym1 from '../../images/mym1.png'
+import mym2 from '../../images/mym2.png'
+import mym3 from '../../images/mym3.png'
+import utnSVG from '../../images/UTN4.png'
 import reactSVG from '../../images/reactjs.svg'
 import nodeSVG from '../../images/nodejs2.png'
 import javascriptSVG from '../../images/javascript.svg'
@@ -57,14 +62,11 @@ const Home = () => {
                         <div className="homeContent">
                             <h5 className="helloText">Hello, my name is</h5>
                             <h1>Luciano Sessarego</h1>
-                            <p>hola soy oscarrrrr</p>
-                            <h6>I am a Fullstack web developer and Programmer</h6>
+                            <h6>Fullstack Web Developer & Programmer</h6>
                             <div className="pHomeText">
-                                <p>
-                                    I develop websites and apps for customers, specialized in
-                                    creating a modern and responsive websites filling the needs
-                                    of the customer.
-                                </p>
+                            <p>
+                                I design and develop modern, responsive websites and applications to meet the needs of each client.
+                            </p>
                             </div>
                             <BtnDownloadCV />
                             <a className="aGithubIcon2" href="https://github.com/xLuchi7" target="blank">
@@ -84,15 +86,26 @@ const Home = () => {
                             <h1 className="aboutMeTitle">About Me</h1>
                             <div className="aboutMeDescription">
                                 <div className="aboutMeTextContainer">
-                                    <p className="aboutMeTextDescription">I am a 20 years old Argentinian Fullstack web developer (specialized in frontend). I am also about to finish my Programming degree in the UTN (Universidad Tecnologica Nacional). 
-                                        I have experience making websites using React, Boostrap, Nodejs and MongoDB. I count with solid fundamentals of object oriented programming, a solid design of SQL databases and  
-                                        NoSQL databases such as MongoDB. I count with the higgest level of english, spanish (native language) and a really advanced level of portuguese.
+                                    <p className="aboutMeTextDescription">
+                                        I am a 22-year-old Argentinian Software Developer. I graduated as a Programmer at UTN and I am currently working at Time Solution as a Fullstack Developer, using ASP.NET MVC (JavaScript for the frontend and C# for the backend) and SQL.
+                                        I develop customized management systems and dashboards for different clients, I also manage multiple freelance projects such as an e-commerce platform built with React, C#, and SQL.
+                                        I have solid foundations in Object-Oriented Programming, strong experience in SQL database design, and knowledge of NoSQL databases such as MongoDB.
+                                        I am fluent in English, a native Spanish speaker, and have an advanced level of Portuguese.
+                                        I am currently seeking a part-time job opportunity to continue growing professionally.
                                     </p>
                                 </div>
-                                {/* <h4 className="myStackTitle">My Stack</h4> */}
                                 <p className="myStackTitle">My Stack</p>
                                 <ImagesDiv />
                                 <h3 className="educationTitle">Education</h3>
+
+                                <div className="divUTNEducation">
+                                    <div className="verticalLine"></div>
+                                    <div className="divUTNEducationDetails">
+                                        <h5 className="h5UTNTitle">UTN Degree</h5>
+                                        <img className="utnSVG" src={utnSVG} alt="utn svg" />
+                                        <a className="aUTNOpenCertificate" onClick={() => handleOpenCertificateClick()}>Open Certificate</a>
+                                    </div>
+                                </div>
                                 <div className="divReactEducation">
                                     <div className="verticalLine"></div>
                                     <div className="divReactEducationDetails">
@@ -131,35 +144,122 @@ const Home = () => {
                     </section>
                     <section id="myProjects">
                         <div className="myProjectsContent">
-                            <h1 className="myProjectsTitle">My Projects</h1>
-                            <p className="ventaGamerLink">An Ecommerce Project: <a href="https://venta-gamer.netlify.app/" target="_blank"> https://venta-gamer.netlify.app</a></p>
-                            <p className="ventaGamerDesc">This is a full responsive, fully functional and modern website i developed.</p>
-                            <div id="carouselExampleDark" className="carousel carousel-dark slide">
-                                <div className="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <h1 className="myProjectsTitle">My Experience</h1>
+                            <div>
+                                <p>
+                                    I have been working at <strong>Time Solution</strong> for 2 years, here I am responsible for 
+                                    gathering client requirements, designing systems, and developing both the 
+                                    frontend and backend as well as the database. During my time here, I have built 
+                                    multiple websites and software applications, mainly focused on management systems 
+                                    and dashboards. I also implemented integrations with <strong>Mercado Pago</strong> and <strong>AFIP</strong>, 
+                                    allowing clients to handle online payments directly within the system.
+                                </p>
+                                <p>
+                                    In addition to my full-time work, I also develop freelance projects. Some examples 
+                                    include:
+                                </p>
+                                <ul>
+                                    <li>An e-commerce platform for customizable clothing built with React, C#, and SQL.</li>
+                                    <li>A website to track wallet movements during the launch of a token.</li>
+                                </ul>
+
+                                <div id="carouselExampleDark" className="carousel carousel-white slide">                                    
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active" data-bs-interval="10000">
+                                            <img src={img1} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item" data-bs-interval="2000">
+                                            <img src={img2} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={img3} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={img4} className="d-block w-100" alt="..."/>
+                                        </div>
+                                    </div>
+                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Previous</span>
+                                    </button>
+                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Next</span>
+                                    </button>
+                                    <div className="carousel-indicators" style={{marginLeft: 120}}>
+                                        <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleWhite" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
                                 </div>
-                                <div className="carousel-inner">
-                                    <div className="carousel-item active" data-bs-interval="10000">
-                                        <img src={img1} className="d-block w-100" alt="..."/>
-                                    </div>
-                                    <div className="carousel-item" data-bs-interval="2000">
-                                        <img src={img2} className="d-block w-100" alt="..."/>
-                                    </div>
-                                    <div className="carousel-item">
-                                        <img src={img3} className="d-block w-100" alt="..."/>
-                                    </div>
-                                </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                </button>
                             </div>
+                            {/* <div id="mymProject">                               
+                                <p className="ventaGamerLink">Muñoz Marchesi Motos:</p>
+                                <p className="ventaGamerDesc">Muñoz Marchesi Motos is a management system combined with great dashboards that gives exact, dinamic and clear information 
+                                to the client. I developed the 100% of this project that can create buy orders, make payments, import the traceability of motorcycles and much more. In the
+                                dashboards the information displayed is dynamic, if you uncheck a "Proveedor" (supplier) the "Ordenes de Compra" (pending purchase orders) will only display 
+                                de pending purchase orders from the suppliers that are checked. </p>
+                                <div id="carouselExampleDark" className="carousel carousel-dark slide">
+                                    <div className="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active" data-bs-interval="10000">
+                                            <img src={mym1} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item" data-bs-interval="2000">
+                                            <img src={mym2} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={mym3} className="d-block w-100" alt="..."/>
+                                        </div>
+                                    </div>
+                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Previous</span>
+                                    </button>
+                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div> */}
+
+                            {/* <div className="ventaGamerProject">
+                                <p className="ventaGamerLink">An Ecommerce Project: <a href="https://venta-gamer.netlify.app/" target="_blank"> https://venta-gamer.netlify.app</a></p>
+                                <p className="ventaGamerDesc">This is a full responsive, fully functional and modern website i developed. Its a classic Ecommerce Web Site where you can Buy
+                                the products listed by the client.
+                                </p>
+                                <div id="carouselExampleDark2" className="carousel carousel-dark slide">
+                                    <div className="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active" data-bs-interval="10000">
+                                            <img src={img1} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item" data-bs-interval="2000">
+                                            <img src={img2} className="d-block w-100" alt="..."/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={img3} className="d-block w-100" alt="..."/>
+                                        </div>
+                                    </div>
+                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Previous</span>
+                                    </button>
+                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>                             */}
                         </div>
                     </section>
                     <section id="contactMe">
